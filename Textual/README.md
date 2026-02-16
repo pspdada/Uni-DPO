@@ -1,6 +1,13 @@
-# Uni-DPO Textual Understanding
+# Uni-DPO Textual Understanding <!-- omit in toc -->
 
 [中文](/Textual/README_zh.md) | **English**
+
+## Contents <!-- omit in toc -->
+
+- [Training](#training)
+  - [Install Required Dependencies](#install-required-dependencies)
+  - [Prepare Training Data](#prepare-training-data)
+  - [Start Training](#start-training)
 
 ## Training
 

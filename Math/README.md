@@ -1,6 +1,19 @@
-# Uni-DPO Math Reasoning
+# Uni-DPO Math Reasoning <!-- omit in toc -->
 
 [中文](/Math/README_zh.md) | **English**
+
+## Contents <!-- omit in toc -->
+
+- [Training](#training)
+  - [Install Required Dependencies](#install-required-dependencies)
+  - [Prepare Training Data](#prepare-training-data)
+  - [Start Training](#start-training)
+- [Evaluation](#evaluation)
+  - [Requirements](#requirements)
+  - [Prepare Evaluation Data](#prepare-evaluation-data)
+  - [Run Evaluation](#run-evaluation)
+  - [Merge Evaluation Results](#merge-evaluation-results)
+- [Data generation](#data-generation)
 
 ## Training
 
@@ -92,3 +105,7 @@ Use the [batch_eval.sh](/Math/evaluation/batch_eval.sh) script to evaluate the m
 ### Merge Evaluation Results
 
 You can use the [merge_results.py](/Math/evaluation/merge_results.py) script to merge the evaluation results into a single file for easier analysis.
+
+## Data generation
+
+If you want to generate the training data for math reasoning yourself, you can use [this script](/Math/data_generation/generate_data.sh).

@@ -1,8 +1,17 @@
-# Uni-DPO Multimodal Understanding
+# Uni-DPO Multimodal Understanding <!-- omit in toc -->
 
 [中文](/Multimodal/README_zh.md) | **English**
 
 This document provides a detailed guide for training and testing the Uni-DPO multimodal understanding task.
+
+## Contents <!-- omit in toc -->
+
+- [Training](#training)
+  - [Install Required Dependencies](#install-required-dependencies)
+  - [Add Uni-DPO Adaptation](#add-uni-dpo-adaptation)
+  - [Prepare Training Data](#prepare-training-data)
+  - [Start Training](#start-training)
+- [Evaluation](#evaluation)
 
 ## Training
 

@@ -22,12 +22,12 @@
 
 </div>
 
-## 🎊 更新 <!-- omit in toc -->
+## 🎊 新闻 <!-- omit in toc -->
 
-- [2025.02.16] 📖 代码、数据与模型已发布！
+- [2026.02.16] 📖 代码、数据与模型已发布！
 - [2026.01.26] 🎉 我们的 Uni-DPO 被 **ICLR 2026** 接收！
 
-## 🚀 项目概述 <!-- omit in toc -->
+## 🚀 概览 <!-- omit in toc -->
 
 **Uni-DPO** 提出一种统一的动态偏好优化范式，用于基于偏好数据训练大语言模型。不同于以往将所有偏好样本等同处理的 DPO 方法，Uni-DPO 同时考虑：**偏好数据自身质量**与**模型学习动态**，从而实现更有效、更稳健的偏好学习。
 
@@ -39,7 +39,7 @@
 
 ## 📌 目录 <!-- omit in toc -->
 
-- [🔑 关键特性](#-关键特性)
+- [🔑 主要特性](#-主要特性)
 - [📚 数据集](#-数据集)
   - [文本理解](#文本理解)
   - [数学推理](#数学推理)
@@ -51,7 +51,7 @@
   - [多模态理解](#多模态理解-1)
 - [📝 引用](#-引用)
 
-## 🔑 关键特性
+## 🔑 主要特性
 
 - **面向偏好优化的双视角动态加权。**
   Uni-DPO 联合建模了*哪些数据值得学习*（内在质量）和*模型仍存在哪些困难*（学习动态）。通过结合质量感知权重和性能感知权重，Uni-DPO 在整个优化过程中动态重新分配训练焦点。
@@ -100,11 +100,11 @@
 
 ## 📚 数据集
 
-我们发布 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO) [🤖](https://modelscope.cn/datasets/pspdada/Uni-DPO) **Uni-DPO 数据集**，包含三类训练数据：文本指令跟随、数学推理、多模态理解。
+我们发布 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO) [🤖](https://modelscope.cn/datasets/pspdada/Uni-DPO) **Uni-DPO 数据集**，包含三类训练数据：_文本理解_、_数学推理_、_多模态理解_。
 
 ### 文本理解
 
-数据集目录下的 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Textual) `Textual` 文件夹包含文本理解任务的训练数据，涵盖 v0.1 和 v0.2 两个训练设置。若想要自己生产这些训练数据，可参考此[文档](/Textual/on_policy_data_gen/README_zh.md)
+数据集目录下的 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Textual) `Textual` 文件夹包含*文本理解*任务的训练数据，涵盖 v0.1 和 v0.2 两个训练设置。若想要自己生产这些训练数据，可参考此[文档](/Textual/on_policy_data_gen/README_zh.md)。
 
 <details>
 <summary>生成数据流程</summary>
@@ -117,7 +117,7 @@
 
 ### 数学推理
 
-数学推理训练数据位于数据集目录下的 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Math) `Math` 文件夹。若想要自己生产这些训练数据，可参考[文档](/Math/data_generation/README.md)并使用[这个脚本](Math/data_generation/generate_data.sh)
+*数学推理*训练数据位于数据集目录下的 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Math) `Math` 文件夹。若想要自己生产这些训练数据，可参考[文档](/Math/README_zh.md)并使用[这个脚本](/Math/data_generation/generate_data.sh)
 
 <details>
 <summary>生成数据流程</summary>
@@ -129,11 +129,11 @@
 
 </details>
 
-评测数据位于 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/blob/main/Math_eval_data.zip) `Math_eval_data.zip`。评测细节见[文档](/Math/evaluation/README.md)。
+评测数据位于 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/blob/main/Math_eval_data.zip) `Math_eval_data.zip`。评测细节见[文档](/Math/README_zh.md)。
 
 ### 多模态理解
 
-训练数据位于 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Multimodal) `Multimodal` 文件夹。
+*多模态理解*的训练数据位于 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Multimodal) `Multimodal` 文件夹。使用方式请参考[文档](/Multimodal/README_zh.md)
 
 ## 📦 模型权重
 
@@ -182,7 +182,7 @@
 如果我们的模型/代码/数据/论文对您有帮助，请引用我们的论文并为我们点 ⭐️！
 
 ```bibtex
-@article{peng2025omni,
+@article{peng2025uni,
   title={Uni-DPO: A Unified Paradigm for Dynamic Preference Optimization of LLMs},
   author={Peng, Shangpin and Wang, Weinong and Tian, Zhuotao and Yang, Senqiao and Wu, Xing and Xu, Haotian and Zhang, Chengquan and Isobe, Takashi and Hu, Baotian and Zhang, Min},
   journal={arXiv preprint arXiv:2506.10054},

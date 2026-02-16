@@ -1,6 +1,18 @@
-# Uni-DPO 数学推理
+# Uni-DPO 数学推理 <!-- omit in toc -->
 
 [English](/Math/README.md) | **中文**
+
+## 目录 <!-- omit in toc -->
+
+- [训练](#训练)
+  - [安装依赖](#安装依赖)
+  - [准备训练数据](#准备训练数据)
+  - [开始训练](#开始训练)
+- [评测](#评测)
+  - [环境要求](#环境要求)
+  - [准备评测数据](#准备评测数据)
+  - [运行评测](#运行评测)
+- [数据生成](#数据生成)
 
 ## 训练
 
@@ -90,3 +102,7 @@ pip install --no-build-isolation flash-attn==2.8.3
 使用 [batch_eval.sh](/Math/evaluation/batch_eval.sh) 脚本批量评测模型在数学推理任务上的表现。
 
 你可以使用 [merge_results.py](/Math/evaluation/merge_results.py) 脚本将评测结果合并到一个文件中，以便更方便地进行分析。
+
+## 数据生成
+
+如果你想要自己生成数学推理的训练数据，可以使用[这个脚本](/Math/data_generation/generate_data.sh)。

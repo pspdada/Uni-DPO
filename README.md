@@ -24,7 +24,7 @@
 
 ## 🎊 News <!-- omit in toc -->
 
-- [2025.02.16] 📖 Code, data, and models are released!
+- [2026.02.16] 📖 Code, data, and models are released!
 - [2026.01.26] 🎉 Our Uni-DPO is accepted by **ICLR 2026**!
 
 ## 🚀 Overview <!-- omit in toc -->
@@ -100,13 +100,11 @@
 
 ## 📚 Dataset
 
-We present the [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO) [🤖](https://modelscope.cn/datasets/pspdada/Uni-DPO) **Uni-DPO Dataset**, which contains preference pairs for training Uni-DPO across three key domains: textual instruction following, mathematical reasoning, and multimodal understanding.
+We present the [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO) [🤖](https://modelscope.cn/datasets/pspdada/Uni-DPO) **Uni-DPO Dataset**, which contains preference pairs for training Uni-DPO across three key domains: _textual understanding_, _mathematical reasoning_, and _multimodal understanding_.
 
 ### Textual Understanding
 
-The [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Textual) `Textual` folder contains training data used for Uni-DPO textual understanding experiments, including data used in both v0.1 and v0.2 settings. The exact mapping can be found in the training config folder.
-
-To generate these data yourself, refer to [this document](/Textual/on_policy_data_gen/README.md).
+The [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Textual) `Textual` folder contains training data used for Uni-DPO _textual understanding_ experiments, including data used in both v0.1 and v0.2 settings. The exact mapping can be found in the training config folder. To generate these data yourself, refer to [this document](/Textual/on_policy_data_gen/README.md).
 
 <details>
 <summary>Process of generating data</summary>
@@ -119,9 +117,9 @@ To generate these data yourself, refer to [this document](/Textual/on_policy_dat
 
 ### Mathematical Reasoning
 
-Training data for math reasoning is located in the [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Math) `Math` folder.
+Training data for _mathematical reasoning_ is located in the [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Math) `Math` folder.
 
-If you need to generate these training data yourself, you can refer to [this document](/Math/data_generation/README.md) and use [this script](Math/data_generation/generate_data.sh).
+If you need to generate these training data yourself, you can refer to [this document](/Math/README.md) and use [this script](/Math/data_generation/generate_data.sh).
 
 <details>
 <summary>Process of generating data</summary>
@@ -133,11 +131,11 @@ If you need to generate these training data yourself, you can refer to [this doc
 
 </details>
 
-Evaluation data are in [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/blob/main/Math_eval_data.zip) `Math_eval_data.zip`. See [this document](Math/evaluation/README.md) for evaluation details.
+Evaluation data are in [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/blob/main/Math_eval_data.zip) `Math_eval_data.zip`. See [this document](/Math/README.md) for evaluation details.
 
 ### Multimodal Understanding
 
-Training data are in the [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Multimodal) `Multimodal` folder.
+Training data for _multimodal understanding_ are in the [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Multimodal) `Multimodal` folder. See [this document](/Multimodal/README.md) for details.
 
 ## 📦 Model Weights
 
@@ -186,7 +184,7 @@ Following [MM-RLHF](https://github.com/Kwai-YuanQi/MM-RLHF). See [this document]
 If you find our model/code/data/paper helpful, please consider citing our papers 📝 and starring us ⭐️！
 
 ```bibtex
-@article{peng2025omni,
+@article{peng2025uni,
   title={Uni-DPO: A Unified Paradigm for Dynamic Preference Optimization of LLMs},
   author={Peng, Shangpin and Wang, Weinong and Tian, Zhuotao and Yang, Senqiao and Wu, Xing and Xu, Haotian and Zhang, Chengquan and Isobe, Takashi and Hu, Baotian and Zhang, Min},
   journal={arXiv preprint arXiv:2506.10054},
