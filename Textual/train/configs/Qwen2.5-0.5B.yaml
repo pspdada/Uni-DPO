@@ -1,0 +1,59 @@
+# ==============================================
+# Configuration Section
+# ==============================================
+model_name_or_path: <Your path to Qwen2.5-0.5B model>
+ref_model: <Your path to Qwen2.5-0.5B model>
+output_dir: <Your output directory path>
+dataset_mixer:
+  "<Your path to UltraFeedback-GPT-4o>": 1.0
+
+# ==============================================
+# The settings below do not need to be modified
+# ==============================================
+
+# Data training arguments
+dataset_splits:
+  - train
+preprocessing_num_workers: 12
+
+# UniDPOTrainer arguments
+learning_rate: 2.0e-6
+pref_loss: uni_dpo
+beta: 3.5
+uni_dpo_qual_eta: 0.7
+uni_dpo_tau_ref: 0.8
+uni_dpo_perf_gamma: 3.0
+uni_dpo_nll_lambda: 0.001
+uni_dpo_tau_good: 3.2
+
+use_ref_model: True
+dpo_length_norm: True
+seed: 42
+warmup_ratio: 0.1
+hub_model_id: Qwen2.5-0.5B-Uni-DPO
+run_name: Qwen2.5-0.5B-Uni-DPO
+
+max_samples: None
+torch_dtype: null
+attn_implementation: flash_attention_2
+bf16: true
+do_eval: true
+eval_strategy: steps
+eval_steps: 1000
+gradient_accumulation_steps: 16
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: False
+log_level: info
+logging_steps: 5
+lr_scheduler_type: cosine
+max_length: 2048
+max_prompt_length: 1800
+num_train_epochs: 1
+optim: adamw_torch
+per_device_train_batch_size: 4
+per_device_eval_batch_size: 8
+push_to_hub: false
+save_strategy: "steps"
+save_steps: 1000000
+save_total_limit: 20

@@ -1,0 +1,46 @@
+{
+  "model": {
+    "Qwen2-VL-2B": {
+      "class": "Qwen2VLChat",
+      "model_path": "<Your path to the Qwen2-VL-2B-Uni-DPO model>"
+    }
+  },
+  "data": {
+    "ChartQA_TEST": {
+      "class": "ImageVQADataset",
+      "dataset": "ChartQA_TEST"
+    },
+    "MMBench_DEV_CN": {
+      "class": "ImageMCQDataset",
+      "dataset": "MMBench_DEV_CN"
+    },
+    "MMBench_DEV_EN": {
+      "class": "ImageMCQDataset",
+      "dataset": "MMBench_DEV_EN"
+    },
+    "MME": {
+      "class": "ImageYORNDataset",
+      "dataset": "MME"
+    },
+    "OCRBench": {
+      "class": "OCRBench",
+      "dataset": "OCRBench"
+    },
+    "POPE": {
+      "class": "ImageYORNDataset",
+      "dataset": "POPE"
+    },
+    "ScienceQA_TEST": {
+      "class": "ImageMCQDataset",
+      "dataset": "ScienceQA_TEST"
+    },
+    "SEEDBench_IMG": {
+      "class": "ImageMCQDataset",
+      "dataset": "SEEDBench_IMG"
+    },
+    "TextVQA_VAL": {
+      "class": "ImageVQADataset",
+      "dataset": "TextVQA_VAL"
+    }
+  }
+}

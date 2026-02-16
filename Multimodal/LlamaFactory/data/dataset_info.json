@@ -1,0 +1,14 @@
+{
+  "uni_dpo_image_only_mcq_short_long_50k": {
+    "file_name": "uni_dpo_image_only_mcq_short_long_50k.json",
+    "ranking": true,
+    "columns": {
+      "prompt": "instruction",
+      "chosen": "chosen",
+      "rejected": "rejected",
+      "score_chosen": "score_chosen",
+      "score_rejected": "score_rejected",
+      "images": "images"
+    }
+  }
+}
