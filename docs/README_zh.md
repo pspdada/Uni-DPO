@@ -109,23 +109,23 @@
 <details>
 <summary>生成数据流程</summary>
 
-1. 下载 [🤗](https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized) `HuggingFaceH4/ultrafeedback_binarized` 数据集
-2. 使用 `decode.py` 生成输出并使用 `post_process.py` 清理
-3. 使用 `reward_model_annotate.py` 进行打分
+1. 下载 [🤗](https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized) `HuggingFaceH4/ultrafeedback_binarized` 数据集；
+2. 使用 `decode.py` 生成输出并使用 `post_process.py` 清理；
+3. 使用 `reward_model_annotate.py` 进行打分。
 
 </details>
 
 ### 数学推理
 
-*数学推理*训练数据位于数据集目录下的 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Math) `Math` 文件夹。若想要自己生产这些训练数据，可参考[文档](/Math/README_zh.md)并使用[这个脚本](/Math/data_generation/generate_data.sh)
+*数学推理*训练数据位于数据集目录下的 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Math) `Math` 文件夹。若想要自己生产这些训练数据，可参考此[文档](/Math/README_zh.md)并使用此[脚本](/Math/data_generation/generate_data.sh)。
 
 <details>
 <summary>生成数据流程</summary>
 
-1. 下载数学问题数据集 [🤗](https://huggingface.co/datasets/RLHFlow/numia_prompt_dpo1) `RLHFlow/numia_prompt_dpo1`
-2. 运行 `gen_samples.py` 以获得模型输出
-3. 使用规则奖励 `verifiable_reward_labeling.py` 与过程奖励模型 `progress_reward_labeling.py` 打分
-4. 运行 `get_uni_dpo_data.py` 构建偏好对
+1. 下载数学问题数据集 [🤗](https://huggingface.co/datasets/RLHFlow/numia_prompt_dpo1) `RLHFlow/numia_prompt_dpo1`；
+2. 运行 `gen_samples.py` 以获得模型输出；
+3. 使用规则奖励 `verifiable_reward_labeling.py` 与过程奖励模型 `progress_reward_labeling.py` 打分；
+4. 运行 `get_uni_dpo_data.py` 构建偏好对。
 
 </details>
 
@@ -133,7 +133,7 @@
 
 ### 多模态理解
 
-*多模态理解*的训练数据位于 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Multimodal) `Multimodal` 文件夹。使用方式请参考[文档](/Multimodal/README_zh.md)
+*多模态理解*的训练数据位于 [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/tree/main/Multimodal) `Multimodal` 文件夹。使用方式请参考[文档](/Multimodal/README_zh.md)。
 
 ## 📦 模型权重
 
