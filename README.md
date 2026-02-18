@@ -139,6 +139,8 @@ Training data for _multimodal understanding_ are in the [🤗](https://huggingfa
 
 ## 📦 Model Weights
 
+We release model weights trained with **Uni-DPO** under two versions: **v0.1** and **v0.2**. The checkpoints cover multiple model families including Llama3-8B, Gemma-2-9B-IT, and Qwen2.5.
+
 | Base Model                                                                           | Training Data                                                                                                                        | Training Setup |                                                                                           Uni-DPO Model                                                                                            |
 | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | :------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | [🤗](https://huggingface.co/princeton-nlp/Llama-3-Base-8B-SFT) Llama-3-8B-Base-SFT   | [🤗](https://huggingface.co/datasets/psp-dada/Uni-DPO/blob/main/Textual/UltraFeedback-GPT-4o/train.jsonl)                            |      v0.1      |                [🤗](https://huggingface.co/psp-dada/Llama-3-8B-Base-SFT-Uni-DPO) [🤖](https://modelscope.cn/models/pspdada/Llama-3-8B-Base-SFT-Uni-DPO) Llama-3-8B-Base-SFT-Uni-DPO                |
