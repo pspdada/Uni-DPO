@@ -186,11 +186,10 @@ Following [MM-RLHF](https://github.com/Kwai-YuanQi/MM-RLHF). See [this document]
 If you find our model/code/data/paper helpful, please consider citing our papers 📝 and starring us ⭐️！
 
 ```bibtex
-@article{peng2025uni,
+@inproceedings{penguni,
   title={Uni-DPO: A Unified Paradigm for Dynamic Preference Optimization of LLMs},
-  author={Peng, Shangpin and Wang, Weinong and Tian, Zhuotao and Yang, Senqiao and Wu, Xing and Xu, Haotian and Zhang, Chengquan and Isobe, Takashi and Hu, Baotian and Zhang, Min},
-  journal={arXiv preprint arXiv:2506.10054},
-  year={2025}
+  author={Peng, Shangpin and Wang, Weinong and Tian, Zhuotao and Yang, Senqiao and Xu, Haotian and Zhang, Chengquan and Isobe, Takashi and Hu, Baotian and Zhang, Min and others},
+  booktitle={The Fourteenth International Conference on Learning Representations}
 }
 ```
 
