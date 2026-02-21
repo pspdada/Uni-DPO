@@ -184,11 +184,10 @@
 如果我们的模型/代码/数据/论文对您有帮助，请引用我们的论文并为我们点 ⭐️！
 
 ```bibtex
-@article{peng2025uni,
+@inproceedings{penguni,
   title={Uni-DPO: A Unified Paradigm for Dynamic Preference Optimization of LLMs},
-  author={Peng, Shangpin and Wang, Weinong and Tian, Zhuotao and Yang, Senqiao and Wu, Xing and Xu, Haotian and Zhang, Chengquan and Isobe, Takashi and Hu, Baotian and Zhang, Min},
-  journal={arXiv preprint arXiv:2506.10054},
-  year={2025}
+  author={Peng, Shangpin and Wang, Weinong and Tian, Zhuotao and Yang, Senqiao and Xu, Haotian and Zhang, Chengquan and Isobe, Takashi and Hu, Baotian and Zhang, Min and others},
+  booktitle={The Fourteenth International Conference on Learning Representations}
 }
 ```
 
