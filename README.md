@@ -124,10 +124,10 @@ If you need to generate this training data yourself, you can refer to [this docu
 <details>
 <summary>Process of generating data</summary>
 
-1. Download math question dataset [🤗](https://huggingface.co/datasets/RLHFlow/numia_prompt_dpo1) `RLHFlow/numia_prompt_dpo1`
-2. Run `gen_samples.py` to generate model responses
-3. Score with `verifiable_reward_labeling.py` and `progress_reward_labeling.py`
-4. Build preference pairs using `get_uni_dpo_data.py`
+1. Download math question dataset [🤗](https://huggingface.co/datasets/RLHFlow/numia_prompt_dpo1) `RLHFlow/numia_prompt_dpo1`,
+2. Run `gen_samples.py` to generate model responses,
+3. Score with `verifiable_reward_labeling.py` and `progress_reward_labeling.py`,
+4. Build preference pairs using `get_uni_dpo_data.py`.
 
 </details>
 
@@ -139,7 +139,7 @@ Training data for _multimodal understanding_ are in the [🤗](https://huggingfa
 
 ## 📦 Model Weights
 
-We release model weights trained with **Uni-DPO** under two versions: **v0.1** and **v0.2**. The checkpoints cover multiple model families including Llama3-8B, Gemma-2-9B-IT, and Qwen2.5.
+We release model weights trained with **Uni-DPO** under two versions: **v0.1** and **v0.2**. The checkpoints cover multiple model families, including Llama3-8B, Gemma-2-9B-IT, and Qwen2.5.
 
 | Base Model                                                                           | Training Data                                                                                                                        | Training Setup |                                                                                           Uni-DPO Model                                                                                            |
 | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | :------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -162,7 +162,7 @@ To ensure fair comparison with prior work, we align training and testing environ
 Training environment: See [this document](/Textual/README.md) for details.
 
 - Built based on the [SimPO](https://github.com/princeton-nlp/SimPO) repository.
-- Mainly rely on alignment-handbook and uses the `Trainer` class from the `transformers` library to construct a `UniDPOTrainer` class for implementing Uni-DPO training.
+- Mainly rely on alignment-handbook and use the `Trainer` class from the `transformers` library to construct a `UniDPOTrainer` class for implementing Uni-DPO training.
 
 For evaluation, the metrics reported in the main paper strictly align with the following four evaluation environments: [Arena-Hard-Auto](https://github.com/lmarena/arena-hard-auto), [AlpacaEval2](https://github.com/tatsu-lab/alpaca_eval), [IFEval](https://github.com/google-research/google-research/tree/master/instruction_following_eval), [SedarEval](https://github.com/wwn1233/sedareval). For downstream task evaluation in the appendix, we use the configuration from [Language Model Evaluation Harness](https://github.com/EleutherAI/lm-evaluation-harness).
 
