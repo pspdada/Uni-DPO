@@ -77,7 +77,9 @@ cd ..
 
 pip install -U pip
 pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0
-pip install -r requirements.txt # Math/evaluation/requirements.txt
+
+# Math/evaluation/requirements.txt
+pip install -r requirements.txt
 
 pip install --no-build-isolation flash-attn==2.8.3
 # 或使用下面的 wheel 安装 flash-attn
