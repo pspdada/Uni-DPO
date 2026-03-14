@@ -2,7 +2,6 @@
 
 [中文](/Textual/on_policy_data_gen/README_zh.md) | **English**
 
-
 We provide scripts for generating on-policy preference datasets (e.g., `Llama-3-8B-Instruct-UltraFeedback-ArmoRM`) used in our experiments.
 
 ## Requirements

@@ -24,6 +24,7 @@
 
 ## 🎊 News <!-- omit in toc -->
 
+- [2026.03.15] 🖼️ Our poster is now available [here](/docs/poster.pdf). Feel free to check it out!
 - [2026.02.16] 📖 Code, data, and models are released!
 - [2026.01.26] 🎉 Our Uni-DPO is accepted by **ICLR 2026**!
 

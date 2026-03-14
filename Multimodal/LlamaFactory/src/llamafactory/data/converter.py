@@ -20,7 +20,6 @@ from typing import TYPE_CHECKING, Any, Union
 from ..extras import logging
 from .data_utils import Role
 
-
 if TYPE_CHECKING:
     from datasets import Dataset, IterableDataset
     from transformers import Seq2SeqTrainingArguments

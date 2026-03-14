@@ -36,7 +36,6 @@ from ...extras.packages import is_transformers_version_greater_than
 from ..callbacks import SaveProcessorCallback
 from ..trainer_utils import create_custom_optimizer, create_custom_scheduler, get_batch_logps, nested_detach
 
-
 if TYPE_CHECKING:
     from transformers import PreTrainedModel, ProcessorMixin
 

@@ -27,7 +27,6 @@ from transformers import DataCollatorForSeq2Seq
 from ..extras.constants import AUDIO_PLACEHOLDER, IGNORE_INDEX, IMAGE_PLACEHOLDER
 from ..extras.packages import is_pillow_available
 
-
 if is_pillow_available():
     from PIL import Image
 
@@ -126,9 +125,7 @@ class MultiModalDataCollatorForSeq2Seq(DataCollatorForSeq2Seq):
         ):  # avoid process hanging in zero3/fsdp case
             fake_messages = [{"role": "user", "content": IMAGE_PLACEHOLDER}]
             fake_images = [Image.new("RGB", (64, 64), (255, 255, 255))]
-            fake_messages = self.template.mm_plugin.process_messages(
-                fake_messages, fake_images, [], [], self.processor
-            )
+            fake_messages = self.template.mm_plugin.process_messages(fake_messages, fake_images, [], [], self.processor)
             _fake_input_ids = self.tokenizer.encode(fake_messages[0]["content"], add_special_tokens=False)
             _fake_input_ids, _ = self.template.mm_plugin.process_token_ids(
                 _fake_input_ids, None, fake_images, [], [], self.tokenizer, self.processor
@@ -142,9 +139,7 @@ class MultiModalDataCollatorForSeq2Seq(DataCollatorForSeq2Seq):
         ):  # avoid process hanging in zero3/fsdp case
             fake_messages = [{"role": "user", "content": AUDIO_PLACEHOLDER}]
             fake_audios = [np.zeros(1600)]
-            fake_messages = self.template.mm_plugin.process_messages(
-                fake_messages, [], [], fake_audios, self.processor
-            )
+            fake_messages = self.template.mm_plugin.process_messages(fake_messages, [], [], fake_audios, self.processor)
             _fake_input_ids = self.tokenizer.encode(fake_messages[0]["content"], add_special_tokens=False)
             _fake_input_ids, _ = self.template.mm_plugin.process_token_ids(
                 _fake_input_ids, None, [], [], fake_audios, self.tokenizer, self.processor
@@ -202,9 +197,9 @@ class MultiModalDataCollatorForSeq2Seq(DataCollatorForSeq2Seq):
                     rope_index_kwargs["audio_seqlens"] = audio_feature_lengths  # prepare for input
 
                 features["position_ids"], rope_deltas = self.get_rope_func(**rope_index_kwargs)
-                features["rope_deltas"] = rope_deltas - (1 - rope_index_kwargs["attention_mask"]).sum(
-                    dim=-1
-                ).unsqueeze(-1)
+                features["rope_deltas"] = rope_deltas - (1 - rope_index_kwargs["attention_mask"]).sum(dim=-1).unsqueeze(
+                    -1
+                )
             else:  # for qwen vl
                 features["position_ids"], features["rope_deltas"] = self.get_rope_func(**rope_index_kwargs)
 
